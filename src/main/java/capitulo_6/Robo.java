@@ -1,13 +1,11 @@
 package capitulo_6;
 
-import capitulo_6.Ponto;
-
 public class Robo {
     private String nome;
     private Ponto ponto; 
     
     public Robo(){
-        nome = new String("");
+        nome = "";
         ponto = new Ponto(); 
     }
 

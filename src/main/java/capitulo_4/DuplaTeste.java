@@ -9,13 +9,13 @@ public class DuplaTeste {
         dupla.aluno1 = aluno1;
         dupla.aluno2 = aluno2;
         Aluno sorteado = dupla.sortear();
-        System.out.println(sorteado.nome);
+        System.out.println(sorteado.getNome());
         
         sorteado = dupla.sortear();
-        System.out.println(sorteado.nome);
+        System.out.println(sorteado.getNome());
         
         sorteado = dupla.sortear();
-        System.out.println(sorteado.nome);
+        System.out.println(sorteado.getNome());
     }
 
 }
