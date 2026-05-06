@@ -1,37 +1,41 @@
-
 package capitulo_7;
+
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Robo {
     private Integer codigo;
     private String nome;
-    private Ponto localizacao;
+    private Integer x; // ponto x na tela 
+    private Integer y; // ponto y na tela
 
     public Robo() {
         this.codigo = 0;
         this.nome = "";
-        this.localizacao = new Ponto();
+        this.x = ThreadLocalRandom.current().nextInt(0, 21);
+        this.y = ThreadLocalRandom.current().nextInt(0, 21);
     }
 
-    public Robo(Integer codigo, String nome, Ponto localizacao) {
+    public Robo(Integer codigo, String nome, Integer x, Integer y) {
         this.codigo = codigo;
         this.nome = nome;
-        this.localizacao = localizacao;
+        this.setX(x);
+        this.setY(y);
     }
     
     public void andarParaFrente(){
-        localizacao.setX(localizacao.getX() + 1);
+        setX(getX() + 1);
     }
     
     public void andarParaTras(){
-        localizacao.setX(localizacao.getX() - 1);
+        setX(getX() - 1);
     }
     
     public void andarParaCima(){
-        localizacao.setX(localizacao.getY() + 1);
+        setY(getY() - 1); 
     }
     
     public void andarParaBaixo(){
-        localizacao.setX(localizacao.getY() - 1);
+        setY(getY() + 1); 
     }
 
     public Integer getCodigo() {
@@ -50,14 +54,28 @@ public class Robo {
         this.nome = nome;
     }
 
-    public Ponto getLocalizacao() {
-        return localizacao;
+    public Integer getX() {
+        return x;
     }
 
-    public void setLocalizacao(Ponto localizacao) {
-        this.localizacao = localizacao;
+    public final void setX(Integer x) {
+        if ( x < 0 || x > 20){
+            return;
+        }
+        this.x = x;
     }
-    
-    
+
+    public Integer getY() {
+        return y;
+    }
+
+    public final void setY(Integer y) {
+        if (y < 0 || y > 20){
+            return; 
+        }
+        this.y = y;
+    }
+
+    public abstract String mostrarPosicao();
     
 }
