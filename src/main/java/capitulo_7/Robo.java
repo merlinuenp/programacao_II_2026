@@ -2,7 +2,7 @@ package capitulo_7;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Robo {
+public abstract class Robo {
     private Integer codigo;
     private String nome;
     private Integer x; // ponto x na tela 
@@ -75,7 +75,7 @@ public class Robo {
         }
         this.y = y;
     }
-
+    
     public abstract String mostrarPosicao();
     
 }

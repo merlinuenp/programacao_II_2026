@@ -33,4 +33,10 @@ public class Ponto {
     public String printar() {
         return "Sou um ponto na posição [" + x + "," + y +"]";
     }
+    
+    @Override
+    public String toString(){
+        return "Sou um ponto simpático"; 
+    }
+    
 }
