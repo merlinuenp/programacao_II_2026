@@ -1,5 +1,8 @@
 /nbproject/
 /src/main/java/capitulo_7/Motocicleta.java
 /src/main/java/capitulo_7/Veiculo.java
-/src/main/java/capitulo_7/formas/
 /src/main/java/capitulo_7/projeto/ProjetoPesquisa.java
+/src/main/java/capitulo_7/formas/Circulo.java
+/src/main/java/capitulo_7/formas/Forma.java
+/src/main/java/capitulo_7/formas/Oval.java
+/src/main/java/capitulo_7/formas/Quadrado.java
