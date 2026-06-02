@@ -10,7 +10,9 @@ public class ProjetoPesquisaTest {
 
     @Test
     public void testConstructor() {
-        ProjetoPesquisa p = new ProjetoPesquisa(GrandeArea.CIENCIAS_EXATAS); 
+        Pesquisa p = new Pesquisa();
+        p.setAreaCnpq("Ciências Exatas");
+        
         System.out.println(p.getAreaCnpq());
     }
     

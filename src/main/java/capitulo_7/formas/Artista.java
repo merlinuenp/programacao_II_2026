@@ -23,14 +23,14 @@ public class Artista {
                 g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
                 // Desenhar um círculo preenchido
-                g2d.setColor(Color.BLUE);
+                g2d.setColor(Color.GREEN);
                 g2d.fillOval(circulo.getX(), circulo.getY(), circulo.getRaio(), circulo.getRaio());
 
             }
 
             @Override
             public Dimension getPreferredSize() {
-                return new Dimension(200, 150);
+                return new Dimension(400, 350);
             }
         };
 
