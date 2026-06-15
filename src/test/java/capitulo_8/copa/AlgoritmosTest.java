@@ -23,10 +23,10 @@ public class AlgoritmosTest {
         
         
         IPontuacao vetorTime[] = new Time[4];
-        vetorTime[0] = new Time("Brasil", new Pais("Brasil", "América"), 10);
-        vetorTime[1] = new Time("Angola", new Pais("Angola", "Africa"), 8);
-        vetorTime[2] = new Time("Japão", new Pais("Japão", "Ásia"), 15);
-        vetorTime[3] = new Time("Escócia", new Pais("Escócia", "Europa"), 21);
+        vetorTime[0] = new Time("Flamengo", new Pais("Brasil", "América"), 10);
+        vetorTime[1] = new Time("Kabuscorp", new Pais("Angola", "Africa"), 8);
+        vetorTime[2] = new Time("Kashima Antlers", new Pais("Japão", "Ásia"), 15);
+        vetorTime[3] = new Time("Celtic", new Pais("Escócia", "Europa"), 21);
         IPontuacao maiorTime = Algoritmos.getMaior(vetorTime);
         Time timeVencedor = (Time) maiorTime;
         
